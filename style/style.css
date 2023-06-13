@@ -543,6 +543,12 @@ footer .nav {
     width: 70%;
     margin: auto;
   }
+  .puppy {
+    margin-top: 69px;
+  }
+  .puppy img {
+    width: 300px;
+  }
 }
 @media (max-width: 760px) {
   .header-wrapper nav {
@@ -679,5 +685,26 @@ footer .nav {
   .donation-text {
     text-align: center;
     margin: auto;
+  }
+  .left-right {
+    margin-bottom: 55px;
+  }
+  .about {
+    padding-top: 42px 0;
+  }
+  .frends {
+    padding: 42px 0;
+  }
+  .pharmacy {
+    padding-top: 42px;
+  }
+  .wraper-donation {
+    padding: 42px 0;
+  }
+  .puppy img {
+    width: 260px;
+  }
+  .puppy {
+    margin: 45px 0 auto;
   }
 }
