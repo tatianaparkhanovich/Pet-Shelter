@@ -202,7 +202,7 @@ h3 {
   border: solid 2px #cdcdcd;
   background-color: #f6f6f6;
 }
-.center:hover {
+.wrapper-button .center:hover {
   background-color: #fddcc4;
 }
 .wrapper-button .right:hover {
@@ -337,9 +337,6 @@ footer .nav {
   }
   .main-wrapper {
     padding-bottom: 42px;
-  }
-  h2 {
-    margin-top: 42px;
   }
   .puppy img {
     width: 260px;
