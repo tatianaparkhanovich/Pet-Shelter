@@ -85,15 +85,15 @@ button {
   cursor: pointer;
   background-color: transparent;
 }
-.logo a {
-  text-decoration: none;
-}
 .mob-menu {
-  width: 35px;
-  height: 5px;
+  width: 27px;
+  height: 16px;
+  display: none;
   background-color: #cdcdcd00;
   border: none;
   z-index: 3;
+  position: fixed;
+  margin-left: 80%;
 }
 .dropdown {
   position: fixed;
@@ -102,7 +102,6 @@ button {
   background-color: rgba(0, 0, 0);
   top: 0;
   left: 0;
-  transform: 0.8s;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -113,30 +112,29 @@ button {
 }
 .dropdown-content {
   max-width: 700px;
-  background: url(../images/start-screen-gradient-background.png),
-    url(../images/start-screen-background1.jpg);
-  background-size: cover;
   padding: 30px;
   position: relative;
+  margin-top: 60px;
 }
-
 .dropdown-content a {
-  display: inline;
   color: #cdcdcd;
-  font-size: 15px;
+  font-size: 28px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 32px;
   font-family: Arial;
   text-decoration: none;
 }
-.dropdown .show {
-  opacity: 1;
-  visibility: visible;
-}
 .dropdown ul {
   display: inline-block;
-  position: relative;
-  margin-top: 150px;
+  margin-top: 180px;
+  margin-bottom: 90px;
+}
+.dropdown-content li {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 35px;
+  line-height: 32px;
+  font-weight: 400;
 }
 .hero-right {
   margin-left: 42px;
@@ -152,6 +150,7 @@ button {
   color: #f1cdb3;
   text-decoration: none;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 h1 {
   font-weight: 400;
@@ -200,11 +199,6 @@ nav a:hover {
   width: 11px;
   padding: 3px;
   color: #fafafa;
-}
-.mob-menu {
-  width: 27px;
-  height: 16px;
-  display: none;
 }
 .about {
   display: flex;
