@@ -755,4 +755,7 @@ footer .nav {
     top: 75px;
     right: 20px;
   }
+  body {
+    position: static;
+  }
 }
