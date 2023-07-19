@@ -91,7 +91,7 @@ button {
   display: none;
   background-color: #cdcdcd00;
   border: none;
-  z-index: 3;
+  z-index: 1;
 }
 .dropdown {
   position: fixed;
@@ -734,6 +734,8 @@ footer .nav {
   }
   .frends {
     padding: 42px 0;
+    position: relative;
+    z-index: -1;
   }
   .pharmacy {
     padding-top: 42px;
