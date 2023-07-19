@@ -19,6 +19,7 @@ window.addEventListener('click', (event) => {
     if (event.target.matches('.dropdown')) {
         dropdown.style.opacity = '0';
         dropdown.style.visibility = 'hidden';
+        body.style.position = 'static';
         mobmenu.style.transform = 'rotate(0deg)';    
     }
 })
