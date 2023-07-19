@@ -751,6 +751,8 @@ footer .nav {
   }
   .mob-menu {
     display: block;
-    margin-right: 15px;
+    position: fixed;
+    top: 75px;
+    right: 20px;
   }
 }
