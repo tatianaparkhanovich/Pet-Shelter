@@ -34,7 +34,8 @@ header ul {
 header p {
   font-weight: 400;
   font-size: 13px;
-  line-height: 14px;
+  line-height: normal;
+  letter-spacing: 1.3px;
   color: #292929;
   font-family: Arial;
   margin-top: 10px;
@@ -60,11 +61,66 @@ img {
   padding-bottom: 100px;
 }
 .mob-menu {
-  width: 35px;
-  height: 5px;
+  width: 30px;
+  height: 30px;
   background-color: #cdcdcd00;
   border: none;
-  cursor: pointer;
+  z-index: 1;
+  display: none;
+}
+.dropdown {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 41, 41, 0.6);
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0;
+  visibility: hidden;
+}
+.dropdown-content {
+  max-width: 320px;
+  padding: 30px;
+  position: relative;
+  background: #292929;
+}
+.logo-menu {
+  text-align: left;
+  margin-top: 10px;
+}
+.logo-menu a {
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 400;
+  letter-spacing: 1.92px;
+  color: #f1cdb3;
+  font-family: Georgia;
+  text-decoration: none;
+  font-style: normal;
+}
+.logo-menu p {
+  color: #fafafa;
+}
+.dropdown-content ul {
+  display: inline-block;
+  margin-top: 80px;
+  text-align: center;
+}
+.dropdown-content li a {
+  text-align: center;
+  font-size: 32px;
+  line-height: 51px;
+  font-weight: 400;
+  font-family: Arial;
+  color: #fafafa;
+  font-style: normal;
+  text-decoration: none;
+}
+.dropdown-content li {
+  margin-top: 40px;
 }
 .active-tab {
   border-bottom: solid 3px #f1cdb3;
@@ -74,11 +130,6 @@ img {
 }
 a:hover {
   color: #545454;
-}
-.mob-menu {
-  width: 27px;
-  height: 16px;
-  display: none;
 }
 h1 {
   font-weight: 400;
@@ -107,6 +158,10 @@ h3 {
   line-height: 22px;
   color: #545454;
   letter-spacing: 0.06em;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
 }
 .text {
   margin: 0 auto;
@@ -314,10 +369,6 @@ footer .nav {
   .header-wrapper nav {
     display: none;
   }
-  .mob-menu {
-    display: block;
-    margin-right: 43px;
-  }
   h2 {
     margin-top: 42px;
     text-align: center;
@@ -343,5 +394,14 @@ footer .nav {
   }
   .puppy {
     margin: 45px 0 auto;
+  }
+  .mob-menu {
+    display: block;
+    position: fixed;
+    top: 50px;
+    right: 30px;
+  }
+  body {
+    position: static;
   }
 }
