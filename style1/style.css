@@ -435,6 +435,10 @@ footer .nav {
     line-height: 14px;
     letter-spacing: 0.78px;
   }
+  .wrapper-popup {
+    width: 650px;
+    height: 400px;
+  }
 }
 @media (max-width: 810px) {
   .wrapper-footer .container {
@@ -449,6 +453,9 @@ footer .nav {
   }
   .footer {
     padding-top: 30px;
+  }
+  .popup-content {
+    margin-top: 70px;
   }
 }
 @media (max-width: 722px) {
@@ -489,5 +496,11 @@ footer .nav {
   }
   body {
     position: static;
+  }
+  .text-pets .p {
+    width: 200px;
+  }
+  .wrapper-popup {
+    width: 230px;
   }
 }
