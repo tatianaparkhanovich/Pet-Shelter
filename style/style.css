@@ -683,6 +683,9 @@ footer .nav {
   .puppy img {
     width: 300px;
   }
+  .popup-content {
+    margin-top: 70px;
+  }
 }
 @media (max-width: 760px) {
   .header-wrapper nav {
@@ -832,7 +835,6 @@ footer .nav {
   .frends {
     padding: 42px 0;
     position: relative;
-    z-index: -1;
   }
   .pharmacy {
     padding-top: 42px;
@@ -855,7 +857,10 @@ footer .nav {
   body {
     position: static;
   }
-  .left-pets img {
-    width: 270px;
+  .text-pets .p {
+    width: 200px;
+  }
+  .wrapper-popup {
+    width: 230px;
   }
 }
