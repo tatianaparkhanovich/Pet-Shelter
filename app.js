@@ -1,7 +1,7 @@
 const renderPopup = [
     {
     "name": "Katrine",
-    "img": "./images1/pets-katrine.png",
+    "img": "./images/pets-katrine.png",
     "type": "Cat",
     "breed": "British Shorthair",
     "description": "Katrine is a beautiful girl. She is as soft as the finest velvet with a thick lush fur. Will love you until the last breath she takes as long as you are the one. She is picky about her affection. She loves cuddles and to stretch into your hands for a deeper relaxations.",
@@ -89,10 +89,21 @@ const renderPopup = [
     }
 ]
 
-
 const mobmenu = document.querySelector('.mob-menu');
 const dropdown = document.getElementById('myDropdown');
 const body = document.querySelector('body')
+const pets = document.querySelector(".pets");
+
+for (let i = 0; i < pets.dataset.itemsсount; i++) { 
+    const card = `<div class="${renderPopup[i].name}">
+                <img src="${renderPopup[i].img}" alt="" />
+                <h3>${renderPopup[i].name}</h3>
+                <button class="popup-btn">Learn more</button>
+            </div> `
+    const cardElement = document.createElement('div');
+    cardElement.innerHTML = card;
+    pets.append(cardElement);
+    }
 
 mobmenu.addEventListener('click', (event) => {
     if (dropdown.style.opacity === '0' || dropdown.style.opacity === "") {
