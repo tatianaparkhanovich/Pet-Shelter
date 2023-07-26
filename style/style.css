@@ -320,38 +320,16 @@ nav a:hover {
 .pets :hover {
   background-color: #ffffff;
 }
-.katrine {
+.mypets:hover {
+  background-color: #ffffff;
+}
+.mypets {
   width: 270px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
   background-color: #fafafa;
-}
-.katrine:hover {
-  background-color: #ffffff;
-}
-.jennifer {
-  width: 270px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 60px;
-  background-color: #fafafa;
-}
-.jennifer:hover {
-  background-color: #ffffff;
-}
-.woody {
-  width: 270px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 60px;
-  background-color: #fafafa;
-}
-.woody:hover {
-  background-color: #ffffff;
 }
 .pharmacy {
   padding-top: 80px;

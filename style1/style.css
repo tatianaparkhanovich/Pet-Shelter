@@ -172,21 +172,17 @@ button {
   flex-wrap: wrap;
   gap: 40px;
 }
-.pet,
-.pet1 {
+.mypets {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 270px;
   background-color: #fafafa;
 }
-.pet:hover {
+.mypets:hover {
   background-color: #ffffff;
 }
-.pet1:hover {
-  background-color: #ffffff;
-}
-.pet img {
+.mypets img {
   text-align: center;
   margin: auto;
 }
