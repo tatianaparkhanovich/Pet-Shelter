@@ -95,7 +95,7 @@ const body = document.querySelector('body')
 const pets = document.querySelector(".pets");
 
 for (let i = 0; i < pets.dataset.itemsсount; i++) { 
-    const card = `<div class=" mypets"${renderPopup[i].mypets}>
+    const card = `<div class=" mypets"${renderPopup[i]}>
                 <img src="${renderPopup[i].img}" alt="" />
                 <h3>${renderPopup[i].name}</h3>
                 <button class="popup-btn">Learn more</button>

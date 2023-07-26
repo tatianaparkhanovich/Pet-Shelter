@@ -304,6 +304,7 @@ nav a:hover {
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
+  flex-wrap: wrap;
 }
 .pets button {
   border: solid 2px #f1cdb3;
