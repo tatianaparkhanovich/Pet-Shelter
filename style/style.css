@@ -297,16 +297,16 @@ nav a:hover {
   color: #545454;
   letter-spacing: 0.06em;
 }
-.pets button:hover {
+.carousel button:hover {
   background-color: #fddcc4;
 }
-.pets {
+.carousel {
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
   flex-wrap: wrap;
 }
-.pets button {
+.carousel button {
   border: solid 2px #f1cdb3;
   font-weight: 400;
   font-size: 17px;
@@ -318,7 +318,7 @@ nav a:hover {
   margin-bottom: 60px;
   letter-spacing: 0.06em;
 }
-.pets :hover {
+.carousel :hover {
   background-color: #ffffff;
 }
 .mypets:hover {
@@ -563,7 +563,7 @@ footer .nav {
   .woody {
     display: none;
   }
-  .pets {
+  .carousel {
     justify-content: space-around;
   }
 }
@@ -601,7 +601,7 @@ footer .nav {
   }
 }
 @media (max-width: 920px) {
-  .pets a {
+  .carousel a {
     padding: 6px 28px;
   }
   .pf {
@@ -640,7 +640,7 @@ footer .nav {
     margin: auto;
     max-width: 437px;
   }
-  .pets a {
+  .carousel a {
     padding: 8px 30px;
   }
   .woody {
@@ -697,9 +697,6 @@ footer .nav {
   .about p {
     width: 270px;
     margin-left: 25px;
-  }
-  .jennifer {
-    display: none;
   }
   .left-right {
     align-items: flex-end;

@@ -1,4 +1,4 @@
-const renderPopup = [
+const petsData = [
     {
     "name": "Katrine",
     "img": "./images/pets-katrine.png",
@@ -93,17 +93,30 @@ const mobmenu = document.querySelector('.mob-menu');
 const dropdown = document.getElementById('myDropdown');
 const body = document.querySelector('body')
 const pets = document.querySelector(".pets");
+const carousel = document.querySelector(".carousel");
 
-for (let i = 0; i < pets.dataset.itemsсount; i++) { 
-    const card = `<div class=" mypets"${renderPopup[i]}>
-                <img src="${renderPopup[i].img}" alt="" />
-                <h3>${renderPopup[i].name}</h3>
+const createCard = (imgUrl, petName) => {
+    return `<div class=" mypets">
+                <img src="${imgUrl}" alt="" />
+                <h3>${petName}</h3>
                 <button class="popup-btn">Learn more</button>
-            </div> `
-    const cardElement = document.createElement('div');
-    cardElement.innerHTML = card;
-    pets.append(cardElement);
-    }
+            </div>`
+}
+const addCards = ((parent, count) => {
+    petsData.forEach((item, i) => {
+        if(count > i){
+            const card = createCard(item.img, item.name);
+            parent.innerHTML += card;
+        }
+})
+})
+if (carousel) {
+    addCards(carousel, 3);
+}
+if (pets) {
+    addCards(pets, 8);
+}
+
 
 mobmenu.addEventListener('click', (event) => {
     if (dropdown.style.opacity === '0' || dropdown.style.opacity === "") {
