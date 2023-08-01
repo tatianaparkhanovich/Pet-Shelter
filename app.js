@@ -56,7 +56,7 @@ window.addEventListener('click', (event) => {
 })
 
 // Modal window
-const creatModal = (petImg, petName, inoculations) => {
+const creatModal = (petImg, petName, petType,petBreed,petDescription,petAge, inoculations, diseases,parasites) => {
     return `<div class="popup-content">
         <button class="close">
             <img src="./images/modal_close_button.svg" alt="" />
@@ -67,18 +67,12 @@ const creatModal = (petImg, petName, inoculations) => {
             </div>
             <div class="text-pets">
             <h3>${petName}</h3>
-            <h4>Dog - Labrador</h4>
-            <p class="p">
-                Jennifer is a sweet 2 months old Labrador that is patiently
-                waiting to find a new forever home. This girl really enjoys
-                being able to go outside to run and play, but won't hesitate to
-                play up a storm in the house if she has all of her favorite
-                toys.
-            </p>
-            <p><b>Age:</b> 2 months</p>
+            <h4>${petType} - ${petBreed}</h4>
+            <p class="p">${petDescription}</p>
+            <p><b>Age:</b> ${petAge}</p>
             <p><b>Inoculations:</b> ${inoculations.join(', ')}</p>
-            <p><b>Diseases:</b> none</p>
-            <p><b>Parasites:</b> none</p>
+            <p><b>Diseases:</b> ${diseases.join(', ')}</p>
+            <p><b>Parasites:</b> ${parasites.join(', ')}</p>
             </div>
         </div>
         </div>`
@@ -89,15 +83,14 @@ popupBtns.forEach((item, i) => {
     item.addEventListener('click', () => {
         mypopup.classList.add('visible');
         mypopup.innerHTML = '';
-        mypopup.insertAdjacentHTML('afterbegin', creatModal(petsData[i].img, petsData[i].name,
-        petsData[i].inoculations));
+        mypopup.insertAdjacentHTML('afterbegin', creatModal(petsData[i].img, petsData[i].name,petsData[i].type,
+        petsData[i].breed,petsData[i].description,petsData[i].age,petsData[i].inoculations,petsData[i].diseases,
+        petsData[i].parasites));
         window.addEventListener('click', (e) => {
             if(e.target.matches('#mypopup') || e.target.closest('.close')) {
                 mypopup.classList.remove('visible');
             }
         })
-
     })
-    
 })
 
