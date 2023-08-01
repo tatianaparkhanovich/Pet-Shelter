@@ -453,6 +453,9 @@ footer .nav {
   .popup-content {
     margin-top: 70px;
   }
+  .mypets:nth-last-child(-n + 2) {
+    display: none;
+  }
 }
 @media (max-width: 722px) {
   .header-wrapper nav {
@@ -467,9 +470,6 @@ footer .nav {
   }
   .pets {
     justify-content: center;
-  }
-  .pet {
-    display: none;
   }
   .wrapper-button {
     justify-content: space-between;
@@ -498,5 +498,8 @@ footer .nav {
   }
   .wrapper-popup {
     width: 230px;
+  }
+  .mypets:nth-last-child(-n + 5) {
+    display: none;
   }
 }
